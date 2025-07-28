@@ -44,7 +44,7 @@ const App = () => (
           } />
           <Route path="/wallet" element={
             <MainLayout>
-              <PlaceholderPage title="Wallet" />
+              <WalletPage />
             </MainLayout>
           } />
           <Route path="/users" element={
