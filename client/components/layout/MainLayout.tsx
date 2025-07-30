@@ -106,8 +106,8 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
               <TrendingUp className="h-5 w-5" />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-bold text-gold-400">TradingBot</span>
-              <span className="text-xs text-sidebar-foreground/70">Pro Platform</span>
+              <span className="text-lg font-bold text-gold-400">AurumBotX</span>
+              <span className="text-xs text-sidebar-foreground/70">Trading Platform</span>
             </div>
           </div>
         </SidebarHeader>
