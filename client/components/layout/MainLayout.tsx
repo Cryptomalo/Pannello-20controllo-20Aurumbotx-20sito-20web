@@ -1,16 +1,16 @@
-import { 
-  Bot, 
-  BarChart3, 
-  Wallet, 
-  Users, 
-  Settings, 
-  CreditCard, 
-  HelpCircle, 
-  FileText, 
+import {
+  Bot,
+  BarChart3,
+  Wallet,
+  Users,
+  Settings,
+  CreditCard,
+  HelpCircle,
+  FileText,
   TrendingUp,
   Shield,
   LogOut,
-  User
+  User,
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import {
@@ -107,7 +107,9 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-bold text-gold-400">AurumBotX</span>
-              <span className="text-xs text-sidebar-foreground/70">Trading Platform</span>
+              <span className="text-xs text-sidebar-foreground/70">
+                Trading Platform
+              </span>
             </div>
           </div>
         </SidebarHeader>
@@ -119,8 +121,8 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
               <SidebarMenu>
                 {navItems.map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton 
-                      asChild 
+                    <SidebarMenuButton
+                      asChild
                       isActive={location.pathname === item.url}
                       tooltip={item.title}
                     >
@@ -128,9 +130,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
                         <item.icon className="h-4 w-4" />
                         <span>{item.title}</span>
                         {item.badge && (
-                          <Badge 
-                            className="ml-auto bg-gold-500 text-dark-900 hover:bg-gold-400"
-                          >
+                          <Badge className="ml-auto bg-gold-500 text-dark-900 hover:bg-gold-400">
                             {item.badge}
                           </Badge>
                         )}
@@ -150,8 +150,8 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
               <SidebarMenu>
                 {bottomNavItems.map((item) => (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton 
-                      asChild 
+                    <SidebarMenuButton
+                      asChild
                       isActive={location.pathname === item.url}
                       tooltip={item.title}
                     >
@@ -171,15 +171,21 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center gap-3">
             <Avatar className="h-8 w-8">
               <AvatarImage src="/placeholder.svg" alt="User" />
-              <AvatarFallback className="bg-gold-500 text-dark-900">FL</AvatarFallback>
+              <AvatarFallback className="bg-gold-500 text-dark-900">
+                FL
+              </AvatarFallback>
             </Avatar>
             <div className="flex flex-1 flex-col text-sm">
-              <span className="font-medium text-sidebar-foreground">Fabio L</span>
-              <span className="text-xs text-sidebar-foreground/70">Premium User</span>
+              <span className="font-medium text-sidebar-foreground">
+                Fabio L
+              </span>
+              <span className="text-xs text-sidebar-foreground/70">
+                Premium User
+              </span>
             </div>
-            <Button 
-              variant="ghost" 
-              size="icon" 
+            <Button
+              variant="ghost"
+              size="icon"
               className="h-8 w-8 text-sidebar-foreground hover:bg-sidebar-accent"
             >
               <LogOut className="h-4 w-4" />
@@ -199,9 +205,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
         </header>
-        <main className="flex-1 overflow-auto p-6">
-          {children}
-        </main>
+        <main className="flex-1 overflow-auto p-6">{children}</main>
       </SidebarInset>
     </SidebarProvider>
   );

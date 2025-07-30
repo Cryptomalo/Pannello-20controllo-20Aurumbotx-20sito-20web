@@ -1,21 +1,27 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { 
-  Bot, 
-  Mail, 
-  Lock, 
-  Eye, 
-  EyeOff, 
-  Shield, 
+import {
+  Bot,
+  Mail,
+  Lock,
+  Eye,
+  EyeOff,
+  Shield,
   TrendingUp,
   CheckCircle,
   Smartphone,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
@@ -32,7 +38,7 @@ export default function Login() {
     "Sicurezza avanzata con 2FA",
     "Supporto 24/7 dedicato",
     "Dashboard professionale",
-    "API per sviluppatori"
+    "API per sviluppatori",
   ];
 
   return (
@@ -48,18 +54,20 @@ export default function Login() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-gold-400">AurumBotX</h1>
-                <p className="text-sm text-muted-foreground">Piattaforma di Trading Automatizzata</p>
+                <p className="text-sm text-muted-foreground">
+                  Piattaforma di Trading Automatizzata
+                </p>
               </div>
             </div>
-            
+
             <h2 className="text-4xl font-bold text-foreground mb-4">
               Il Futuro del Trading
               <br />
               <span className="text-gold-400">è Automatico</span>
             </h2>
-            
+
             <p className="text-lg text-muted-foreground mb-8">
-              Unisciti a migliaia di trader che utilizzano la nostra AI avanzata 
+              Unisciti a migliaia di trader che utilizzano la nostra AI avanzata
               per massimizzare i profitti nel mercato delle criptovalute.
             </p>
           </div>
@@ -80,7 +88,9 @@ export default function Login() {
             </div>
             <div className="p-4 bg-dark-800/50 rounded-lg border border-gold-500/20">
               <div className="text-2xl font-bold text-gold-400">€2.4M</div>
-              <div className="text-sm text-muted-foreground">Profitti Totali</div>
+              <div className="text-sm text-muted-foreground">
+                Profitti Totali
+              </div>
             </div>
             <div className="p-4 bg-dark-800/50 rounded-lg border border-gold-500/20">
               <div className="text-2xl font-bold text-gold-400">24/7</div>
@@ -105,10 +115,16 @@ export default function Login() {
 
           <Tabs defaultValue="login" className="w-full">
             <TabsList className="grid w-full grid-cols-2 bg-dark-800">
-              <TabsTrigger value="login" className="data-[state=active]:bg-gold-500 data-[state=active]:text-dark-900">
+              <TabsTrigger
+                value="login"
+                className="data-[state=active]:bg-gold-500 data-[state=active]:text-dark-900"
+              >
                 Accedi
               </TabsTrigger>
-              <TabsTrigger value="register" className="data-[state=active]:bg-gold-500 data-[state=active]:text-dark-900">
+              <TabsTrigger
+                value="register"
+                className="data-[state=active]:bg-gold-500 data-[state=active]:text-dark-900"
+              >
                 Registrati
               </TabsTrigger>
             </TabsList>
@@ -116,14 +132,18 @@ export default function Login() {
             <TabsContent value="login">
               <Card className="bg-card border-border">
                 <CardHeader className="text-center">
-                  <CardTitle className="text-2xl text-foreground">Bentornato!</CardTitle>
+                  <CardTitle className="text-2xl text-foreground">
+                    Bentornato!
+                  </CardTitle>
                   <CardDescription>
                     Accedi al tuo account per continuare il trading
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-foreground">Email</Label>
+                    <Label htmlFor="email" className="text-foreground">
+                      Email
+                    </Label>
                     <div className="relative">
                       <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                       <Input
@@ -138,7 +158,9 @@ export default function Login() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="password" className="text-foreground">Password</Label>
+                    <Label htmlFor="password" className="text-foreground">
+                      Password
+                    </Label>
                     <div className="relative">
                       <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                       <Input
@@ -170,7 +192,9 @@ export default function Login() {
                       <Checkbox
                         id="remember"
                         checked={rememberMe}
-                        onCheckedChange={(checked) => setRememberMe(checked as boolean)}
+                        onCheckedChange={(checked) =>
+                          setRememberMe(checked as boolean)
+                        }
                       />
                       <label
                         htmlFor="remember"
@@ -179,7 +203,7 @@ export default function Login() {
                         Ricordami
                       </label>
                     </div>
-                    <Link 
+                    <Link
                       to="/forgot-password"
                       className="text-sm text-gold-400 hover:text-gold-300 transition-colors"
                     >
@@ -197,7 +221,9 @@ export default function Login() {
                       <span className="w-full border-t border-border" />
                     </div>
                     <div className="relative flex justify-center text-xs uppercase">
-                      <span className="bg-card px-2 text-muted-foreground">Oppure</span>
+                      <span className="bg-card px-2 text-muted-foreground">
+                        Oppure
+                      </span>
                     </div>
                   </div>
 
@@ -210,7 +236,9 @@ export default function Login() {
                   <div className="flex items-center gap-2 p-3 bg-gold-500/10 border border-gold-500/20 rounded-lg">
                     <Shield className="h-4 w-4 text-gold-400" />
                     <div className="text-sm">
-                      <span className="text-foreground font-medium">Sicurezza Avanzata:</span>
+                      <span className="text-foreground font-medium">
+                        Sicurezza Avanzata:
+                      </span>
                       <span className="text-muted-foreground ml-1">
                         L'autenticazione a due fattori è obbligatoria
                       </span>
@@ -223,7 +251,9 @@ export default function Login() {
             <TabsContent value="register">
               <Card className="bg-card border-border">
                 <CardHeader className="text-center">
-                  <CardTitle className="text-2xl text-foreground">Inizia Oggi</CardTitle>
+                  <CardTitle className="text-2xl text-foreground">
+                    Inizia Oggi
+                  </CardTitle>
                   <CardDescription>
                     Crea il tuo account e inizia a fare trading
                   </CardDescription>
@@ -236,7 +266,9 @@ export default function Login() {
                 <CardContent className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="firstName" className="text-foreground">Nome</Label>
+                      <Label htmlFor="firstName" className="text-foreground">
+                        Nome
+                      </Label>
                       <Input
                         id="firstName"
                         placeholder="Nome"
@@ -244,7 +276,9 @@ export default function Login() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="lastName" className="text-foreground">Cognome</Label>
+                      <Label htmlFor="lastName" className="text-foreground">
+                        Cognome
+                      </Label>
                       <Input
                         id="lastName"
                         placeholder="Cognome"
@@ -254,7 +288,9 @@ export default function Login() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="registerEmail" className="text-foreground">Email</Label>
+                    <Label htmlFor="registerEmail" className="text-foreground">
+                      Email
+                    </Label>
                     <div className="relative">
                       <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                       <Input
@@ -267,7 +303,12 @@ export default function Login() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="registerPassword" className="text-foreground">Password</Label>
+                    <Label
+                      htmlFor="registerPassword"
+                      className="text-foreground"
+                    >
+                      Password
+                    </Label>
                     <div className="relative">
                       <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                       <Input
@@ -283,7 +324,9 @@ export default function Login() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-foreground">Telefono (per 2FA)</Label>
+                    <Label htmlFor="phone" className="text-foreground">
+                      Telefono (per 2FA)
+                    </Label>
                     <div className="relative">
                       <Smartphone className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                       <Input
@@ -297,13 +340,22 @@ export default function Login() {
 
                   <div className="flex items-start space-x-2">
                     <Checkbox id="terms" className="mt-1" />
-                    <label htmlFor="terms" className="text-sm text-muted-foreground leading-relaxed">
+                    <label
+                      htmlFor="terms"
+                      className="text-sm text-muted-foreground leading-relaxed"
+                    >
                       Accetto i{" "}
-                      <Link to="/terms" className="text-gold-400 hover:text-gold-300">
+                      <Link
+                        to="/terms"
+                        className="text-gold-400 hover:text-gold-300"
+                      >
                         Termini di Servizio
                       </Link>{" "}
                       e la{" "}
-                      <Link to="/privacy" className="text-gold-400 hover:text-gold-300">
+                      <Link
+                        to="/privacy"
+                        className="text-gold-400 hover:text-gold-300"
+                      >
                         Privacy Policy
                       </Link>
                     </label>
@@ -316,10 +368,12 @@ export default function Login() {
 
                   <div className="text-center text-sm text-muted-foreground">
                     Hai già un account?{" "}
-                    <button 
+                    <button
                       className="text-gold-400 hover:text-gold-300 transition-colors"
                       onClick={() => {
-                        const loginTab = document.querySelector('[value="login"]') as HTMLElement;
+                        const loginTab = document.querySelector(
+                          '[value="login"]',
+                        ) as HTMLElement;
                         loginTab?.click();
                       }}
                     >
