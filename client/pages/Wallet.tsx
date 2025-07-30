@@ -249,7 +249,7 @@ export default function WalletPage() {
                 <DialogHeader>
                   <DialogTitle className="text-foreground">Deposita Fondi</DialogTitle>
                   <DialogDescription>
-                    Trasferisci criptovalute nel tuo wallet TradingBot Pro
+                    Trasferisci criptovalute nel tuo wallet AurumBotX
                   </DialogDescription>
                 </DialogHeader>
                 <div className="space-y-4">
