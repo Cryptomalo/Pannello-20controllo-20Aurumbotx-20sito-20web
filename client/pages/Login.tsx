@@ -47,7 +47,7 @@ export default function Login() {
                 <TrendingUp className="h-7 w-7" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gold-400">TradingBot Pro</h1>
+                <h1 className="text-2xl font-bold text-gold-400">AurumBotX</h1>
                 <p className="text-sm text-muted-foreground">Piattaforma di Trading Automatizzata</p>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function Login() {
               <TrendingUp className="h-6 w-6" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gold-400">TradingBot Pro</h1>
+              <h1 className="text-xl font-bold text-gold-400">AurumBotX</h1>
             </div>
           </div>
 
